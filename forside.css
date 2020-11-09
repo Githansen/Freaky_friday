@@ -1,0 +1,46 @@
+.forside {
+    grid-row: auto; 
+	grid-column: auto / span 5;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+	background-image: url(hotelb.jpg);
+	
+	background-size: cover; 
+	text-align: center;
+}
+
+.forside h1 {
+	text-align: center; 
+}
+.forside h2 {
+	text-align: center; 
+}
+.tekstboks {
+	width: 100%;
+	background-color: rgba(255, 0, 0, 0.4);
+	color: #FDFEFE;
+	border: 1px solid black;
+	
+}
+.tekstboks p {
+	margin-top: 200px;
+}
+.tekstboks2 {
+	background-color: #EDBB99;
+	border: 1px solid black;
+	margin-left: 10%; 
+	font-size: 19px;
+	width: 25%;
+	padding: 25px; 
+	opacity: 0.5;
+}
+.tekstboks2:hover {
+
+	opacity: 1;
+
+}
+.tekstboks:hover {
+	color: black; 
+	background-color: white; 
+}

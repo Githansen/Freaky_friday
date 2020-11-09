@@ -1,0 +1,20 @@
+.navigasjon {
+  overflow: hidden;
+  background-color: #626567;
+  height: 90px;
+  width: 100%;
+}
+.navigasjon a {
+  float: left;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+  margin-top: 46px;
+  font-size: 26px;
+  color: white;
+	
+}
+.navigasjon img{
+	float: left;
+	height: 90px;
+}
