@@ -29,8 +29,7 @@ button {
 	display: grid; 
 	grid-column: auto/span 5;
 	grid-row: auto;
-	background-color: black; 
-	height: 200px; 
+	background-color: black;  
 	width: 100%; 
 	color: white; 
 	text-align: center; 
@@ -166,12 +165,22 @@ h3 {
 	border-radius: 10px;
 	border: 1px solid black;
 }
-.topphoto ul {
+#smalls {
 	
+}
+.topphoto ul {
 width: 25%;	
 }
+#smallf {
+	display: none; 
+}
 @media only screen and (max-width: 800px){
-	
+	#smalls {
+		display: none; 
+	}
+	#smallf {
+		display: block; 
+	}
 .moreroominfo {
 	display: none;
 }
@@ -181,7 +190,19 @@ width: 25%;
 .roominfo3 {
 	grid-row: 11;
 }
+.tekstboks2 {
+	z-index: 4;
+} 
 #first img {
 	height: 110vh;
 }
+.footer {
+	display: none; 
+	
+}
+}
+@media only screen and (max-width: 1200px){
+	.footer {
+		margin-top: 350px;
+	}
 }
