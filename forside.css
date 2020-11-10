@@ -1,11 +1,10 @@
 .forside {
     grid-row: auto; 
 	grid-column: auto / span 5;
-    height: 100vh;
+	height: 125vh;
     justify-content: center;
     align-items: center;
 	background-image: url(hotelb.jpg);
-	
 	background-size: cover; 
 	text-align: center;
 }
@@ -17,9 +16,13 @@
 	text-align: center; 
 }
 .tekstboks {
-	width: 100%;
-	background-color: rgba(255, 0, 0, 0.4);
-	color: #FDFEFE;
+	width: 20%;
+	margin-left: 40%;
+	background-color: silver;
+	opacity: 0.9;
+	display: grid;
+	grid-column: 2;
+	box-shadow: 10px 5px black;
 	border: 1px solid black;
 	
 }
@@ -29,18 +32,39 @@
 .tekstboks2 {
 	background-color: #EDBB99;
 	border: 1px solid black;
-	margin-left: 10%; 
-	font-size: 19px;
+	font-size: 22px;
 	width: 25%;
-	padding: 25px; 
-	opacity: 0.5;
+	padding: 45px; 
+	box-shadow: 5px 5px black;
+	display: block;
+	
 }
-.tekstboks2:hover {
-
-	opacity: 1;
-
+.tekstboks3 {
+	display: none;
+	background-color: #EDBB99;
+	border: 1px solid black;
+	font-size: 22px;
+	width: 50%;
+	padding: 45px; 
+	box-shadow: 5px 5px black;
+	margin-left: 25%;
+	
+	
 }
-.tekstboks:hover {
-	color: black; 
-	background-color: white; 
+@media only screen and (max-width: 1100px) {
+	.tekstboks2 {
+		width: 70%;
+		margin-left: 20px;
+	}
+	.tekstboks {
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.tekstboks3 {
+		display: block; 
+	}
+	.tekstboks2{
+		display: none;
+	}
 }

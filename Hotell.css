@@ -7,13 +7,14 @@ ul a {
 	text-decoration: none;
 }
 .text {
-	padding: 20px;
-    margin: 20px;
+	padding: 40px;
+    margin: 13px;
     font-size: 20px;
    background-color: #EDBB99;
     border-radius: 10px;
 	align-items: top;
 	border: 1px solid black;
+	
 	
 }
 button {
@@ -58,11 +59,12 @@ grid-column: 1/span 5;
 	background-color: #EDBB99;
 	text-align: left; 
 	font-size: 24px;
-	
+	padding: 35px;
     margin: 70px;
    background-color: #EDBB99;
     border-radius: 10px;
 	border: 1px solid black;
+
 	
 }
 .roominfo2 {
@@ -100,7 +102,21 @@ grid-column: 1/span 5;
 	background-color: #EDBB99;
 	text-align: center; 
 	font-size: 24px;
+	padding: 55px;
+    margin: 70px;
+   background-color: #EDBB99;
+    border-radius: 10px;
+	border: 1px solid black;
 	
+}
+.moreroominfo2 {
+	display: grid; 
+	grid-column: auto;
+	grid-row: auto;
+	background-color: #EDBB99;
+	text-align: center; 
+	font-size: 24px;
+	padding: 55px;
     margin: 70px;
    background-color: #EDBB99;
     border-radius: 10px;
@@ -109,7 +125,7 @@ grid-column: 1/span 5;
 }
 .roompictures {
 	display: grid; 
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 3;
 	grid-row: 3/span 3;
 	background-color: #EDBB99; 
 	padding: 20px;
@@ -136,7 +152,7 @@ min-width: 200px;
 }
 .room2pictures {
 	display: grid; 
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 3;
 	grid-row: 7/span 3;
 	background-color: #EDBB99; 
 	padding: 20px;
@@ -157,7 +173,7 @@ h3 {
 }
 .room3pictures {
 	display: grid; 
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 3;
 	grid-row: 11/span 3;
 	background-color: #EDBB99; 
 	padding: 20px;
@@ -165,43 +181,45 @@ h3 {
 	border-radius: 10px;
 	border: 1px solid black;
 }
-#smalls {
-	
-}
+
 .topphoto ul {
 width: 25%;	
 }
-#smallf {
-	display: none; 
+
+@media only screen and (max-width: 1200px){
+	.topphoto {
+		grid-column: auto/span 2;
+	}
+	.roompictures {
+		grid-row: 3;
+	} 
+	.room2pictures {
+		grid-row: 6;
+	} 
+	.room3pictures {
+		grid-row: 9;
+	} 
+.moreroominfo2 {
+	grid-column: 2;
 }
-@media only screen and (max-width: 800px){
-	#smalls {
-		display: none; 
-	}
-	#smallf {
-		display: block; 
-	}
+
 .moreroominfo {
-	display: none;
-}
-.roominfo2 {
-	grid-row: 7;
-}
-.roominfo3 {
-	grid-row: 11;
+	grid-column: 1;
 }
 .tekstboks2 {
 	z-index: 4;
 } 
 #first img {
-	height: 110vh;
-}
-.footer {
-	display: none; 
 	
 }
+
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-height: 900px){
+	.footer {
+		margin-top: 250px;
+	}
+}
+@media only screen and (max-height: 500px){
 	.footer {
 		margin-top: 350px;
 	}
